@@ -1,44 +1,46 @@
-# General
-.DS_Store
-.DS_Store?
-logs
-*.log
-*.dmg
-*.gz
-*.rar
-*.tar
-*.zip
+# -----------------------------------------------------------------
+# Square 205 .gitignore for webpack-wordpress
+#
+# Our approach is to ignore everything, and explicitly define what
+# will be tracked. It is assumed that we will never touch wordpress
+# core and that `npm run dev` will compile our theme files in the
+# wordpress directory.
+#
+# -----------------------------------------------------------------
 
+# Ignore all files starting with .
+.*
 
-# Node/Webpack
-node_modules
-npm-debug.log*
-pids
-*.pid
-*.seed
-*.pid.lock
-.npm
-.node_repl_history
-*.tgz
-*.hotpush.json
+# Ignore all files starting with ~
+~*
 
+# Ignore everything in the root except .gitignore, project config,
+# the readme, and your theme directory.
+/*
+!.gitignore
+!package.json
+!webpack.config.js
+!webpack-configs/
+!webpack-configs/*
+!README.md
+!/wordpress
 
-# Wordpress
-wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/wp-cache-config.php
-wp-content/plugins/hello.php
-wp-content/plugins
-wp-content/themes/awesome-theme
-wordpress/wp-config.php
-/.htaccess
-/license.txt
-/readme.html
-/sitemap.xml
-/sitemap.xml.gz
+# Specify your project theme source file here:
+!awesome-theme
+
+# Ignore any images directory, too big for git repo
+**/images/
+
+# Ignore everything in the "wordpress" directory (which is built
+# from the project source with `npm run dev`) except the wp-content
+# directory. Within wp-content directory, ignore everything except
+# the "plugins" and "mu-plugins" directories. We track plugins for
+# ease of deployment.
+/wordpress/*
+!/wordpress/wp-content
+/wordpress/wp-content/*
+!/wordpress/wp-content/plugins
+!/wordpress/wp-content/mu-plugins
+
+# Track .htaccess file
+!/wordpress/.htaccess

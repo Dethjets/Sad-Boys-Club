@@ -2,12 +2,12 @@
 /**
  * The template for displaying comments
  *
- * The area of the page that contains both current comments
+ * This is the template that displays the area of the page that contains both the current comments
  * and the comment form.
  *
- * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package awesome-theme
  */
 
 /*
@@ -22,58 +22,54 @@ if ( post_password_required() ) {
 
 <div id="comments" class="comments-area">
 
-	<?php if ( have_comments() ) : ?>
+	<?php
+	// You can start editing here -- including this comment!
+	if ( have_comments() ) :
+		?>
 		<h2 class="comments-title">
 			<?php
-				$comments_number = get_comments_number();
-				if ( 1 === $comments_number ) {
-					/* translators: %s: post title */
-					printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'twentysixteen' ), get_the_title() );
-				} else {
-					printf(
-						/* translators: 1: number of comments, 2: post title */
-						_nx(
-							'%1$s thought on &ldquo;%2$s&rdquo;',
-							'%1$s thoughts on &ldquo;%2$s&rdquo;',
-							$comments_number,
-							'comments title',
-							'twentysixteen'
-						),
-						number_format_i18n( $comments_number ),
-						get_the_title()
-					);
-				}
+			$awesome_theme_comment_count = get_comments_number();
+			if ( '1' === $awesome_theme_comment_count ) {
+				printf(
+					/* translators: 1: title. */
+					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'awesome-theme' ),
+					'<span>' . get_the_title() . '</span>'
+				);
+			} else {
+				printf( // WPCS: XSS OK.
+					/* translators: 1: comment count number, 2: title. */
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $awesome_theme_comment_count, 'comments title', 'awesome-theme' ) ),
+					number_format_i18n( $awesome_theme_comment_count ),
+					'<span>' . get_the_title() . '</span>'
+				);
+			}
 			?>
-		</h2>
+		</h2><!-- .comments-title -->
 
 		<?php the_comments_navigation(); ?>
 
 		<ol class="comment-list">
 			<?php
-				wp_list_comments( array(
-					'style'       => 'ol',
-					'short_ping'  => true,
-					'avatar_size' => 42,
-				) );
+			wp_list_comments( array(
+				'style'      => 'ol',
+				'short_ping' => true,
+			) );
 			?>
 		</ol><!-- .comment-list -->
 
-		<?php the_comments_navigation(); ?>
+		<?php
+		the_comments_navigation();
 
-	<?php endif; // Check for have_comments(). ?>
-
-	<?php
 		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
-	?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'twentysixteen' ); ?></p>
-	<?php endif; ?>
+		if ( ! comments_open() ) :
+			?>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'awesome-theme' ); ?></p>
+			<?php
+		endif;
 
-	<?php
-		comment_form( array(
-			'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
-			'title_reply_after'  => '</h2>',
-		) );
+	endif; // Check for have_comments().
+
+	comment_form();
 	?>
 
-</div><!-- .comments-area -->
+</div><!-- #comments -->
