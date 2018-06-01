@@ -92,7 +92,7 @@ get_header();
 			<div class="row">
 				<div class="col-md-6 col-lg-4">
 					<div class="card mb-3">
-						<img class="card-img-top" src="img/Sadboysclub_mason.png" alt="Desertman">
+						<img class="card-img-top" src="/wp-content/themes/awesome-theme/images/Sadboysclub_mason.png" alt="Desertman">
 						<div class="card-body">
 							<h5 class="card-title text-warning">Mason Strickland</h5>
 							<p class="card-text text-info">Mason makes music and likes riding his whip around Soundcloud.</p>
@@ -102,7 +102,7 @@ get_header();
 
 				<div class="col-md-6 col-lg-4">
 					<div class="card mb-3">
-						<img class="card-img-top" src="/img/Sadboysclub_nathan.png" alt="Deth Jets">
+						<img class="card-img-top" src="/wp-content/themes/awesome-theme/images/Sadboysclub_nathan.png" alt="Deth Jets">
 						<div class="card-body">
 							<h5 class="card-title text-warning">Nathan Williams</h5>
 							<p class="card-text text-info">Nathan hosts Sad Boys Club and enjoys coding.</p>
@@ -112,7 +112,7 @@ get_header();
 
 				<div class="col-md-6 col-lg-4">
 					<div class="card mb-3">
-						<img class="card-img-top" src="img/Sadboysclub_dustin.png" alt="Ex10doe">
+						<img class="card-img-top" src="/wp-content/themes/awesome-theme/images/Sadboysclub_dustin.png" alt="Ex10doe">
 						<div class="card-body">
 							<h5 class="card-title text-warning">Dustin Harris</h5>
 							<p class="card-text text-info">Dustin enjoys backwoods and whiping around on his chuckus.</p>
@@ -137,5 +137,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

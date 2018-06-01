@@ -25,7 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'awesome-theme' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<!-- <div class="site-branding">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -40,9 +40,9 @@
 			$awesome_theme_description = get_bloginfo( 'description', 'display' );
 			if ( $awesome_theme_description || is_customize_preview() ) :
 				?>
-				<!-- <p class="site-description"><?php echo $awesome_theme_description; /* WPCS: xss ok. */ ?></p> -->
+			 	<p class="site-description"><?php echo $awesome_theme_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
-		</div><!-- .site-branding -->
+		</div> --> <!-- .site-branding -->
 
 	<!--	<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'awesome-theme' ); ?></button> -->
@@ -51,7 +51,7 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
-	<div class="container">
+	<div>
 		<a class="navbar-brand order-1 mr-0" href="https://www.kuzu.fm/#streaming-section" target="_blank">Proud Member of KUZU 92.9 LPFM</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>

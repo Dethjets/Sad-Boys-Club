@@ -50,7 +50,7 @@ get_header();
 		<div class="col-md-12 col-lg-12">
 					<h5 class="card-title text-warning">Twitter</h5>
 					<p class="card-text text-info">We're Twits.</p>
-					<?php echo do_shortcode('[fts_twitter twitter_name=Sad Boys Club tweets_count=6 cover_photo=yes stats_bar=no show_retweets=no show_replies=no]'); ?> " alt="Twitter Stream">
+					<?php echo do_shortcode('[fts_twitter twitter_name=Sadboyclubus tweets_count=6 cover_photo=yes stats_bar=no show_retweets=no show_replies=no]'); ?> " alt="Twitter Stream">
 				</div>
 			</div>
 		</div>
@@ -65,5 +65,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

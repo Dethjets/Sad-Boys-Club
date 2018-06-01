@@ -52,8 +52,6 @@ get_header();
 		?>
 		<!-- Custom code starts here? -->
 
-		<body>
-
 			    <!-- Container -->
 	    <div class="container pt-5">
 
@@ -81,7 +79,7 @@ get_header();
 	          </div>
 	        </div>
 	      </div>
-	      <hr><!-- /Signup Form -->
+			</hr><!-- /Signup Form -->
 
 	    </div><!-- /Container -->
 
@@ -93,150 +91,148 @@ get_header();
 	      </div>
 	    </div><!-- /Input Button -->
 
-	    <!--=========== Modal ==========-->
-	    <div class="modal fade" id="join" tabindex="-1" role="dialog" aria-labelledby="Join the club" aria-hidden="true">
-	      <div class="modal-dialog" role="document">
-	        <div class="modal-content">
-	          <div class="modal-header bg-info text-white">
-	            <h5 class="modal-title text-warning" id="exampleModalLabel">Wanna join the club?</h5>
-	            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	              <span aria-hidden="true">&times;</span>
-	            </button>
-	          </div>
-	          <div class="modal-body text-info">
-	            <!-- Modal Form -->
-	            <form>
-	              <div class="alert alert-warning alert-dismissible fade show" role="alert">
-	                <strong>Howdy!</strong> Coming Soon. Thanks for reaching out!
-	                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-	                  <span aria-hidden="true">&times;</span>
-	                </button>
-	              </div>
-	              <h5 class="mb-4">Basic Info:</h5>
-	              <div class="form-group">
-	                <label for="name">Name:</label>
-	                <input type="text" class="form-control" id="name">
-	              </div>
-	              <div class="form-group">
-	                <label for="email">Email:</label>
-	                <input type="email" class="form-control" id="email">
-	              </div>
-	              <div class="form-group">
-	                <label for="location">Location:</label>
-	                <input type="location" class="form-control" id="location">
-	              </div>
-	              <div class="form-group">
-	                <label for="music">Music Link:</label>
-	                <input type="music" class="form-control" id="music">
-	              </div>
-	              <div class="form-group">
-	                <label for"genre">Music Genre:</label>
-	                <select class="custom-select form-control" id="genre">
-	                  <option value="hiphop">Hip-hop</option>
-	                  <option value="lofi">Lo-fi</option>
-	                  <option value="rock">Rock</option>
-	                  <option value="pop">Pop</option>
-	                  <option value="folk">Folk</option>
-	                </select>
-	              </div>
-
-	              <!-- Custom Checkboxes -->
-	              <hr class="mr-4">
-	              <h5 class="mb-4">What can we help you with?</h5>
-
-	              <div class="custom-control custom-checkbox">
-	                <input type="checkbox" class="custom-control-input" id="checkbox-design">
-	                <label class="custom-control-label" for="checkbox-design">Design</label>
-	              </div>
-	              <div class="custom-control custom-checkbox">
-	                <input type="checkbox" class="custom-control-input" id="checkbox-website">
-	                <label class="custom-control-label" for="checkbox-website">Website Development</label>
-	              </div>
-	              <div class="custom-control custom-checkbox">
-	                <input type="checkbox" class="custom-control-input" id="checkbox-promotion">
-	                <label class="custom-control-label" for="checkbox-promotion">Promotion</label>
-	              </div>
-	              <div class="custom-control custom-checkbox">
-	                <input type="checkbox" class="custom-control-input" id="checkbox-gaming">
-	                <label class="custom-control-label" for="checkbox-gaming">Gaming Sponsorship</label>
-	              </div>
-	              <div class="custom-control custom-checkbox">
-	                <input type="checkbox" class="custom-control-input" id="checkbox-screenprint">
-	                <label class="custom-control-label" for="checkbox-screenprint">Screenprinting</label>
-	              </div><!-- /Custom Checkboxes -->
-
-	              <!-- Payment Information -->
-	              <hr class="mr-4">
-	              <h5 class="mb-4">Want to give us money for some reason?</h5>
-
-	              <div class="form-row">
-	                <div class="col-lg-6 form-group">
-	                  <label for="cc-num">Card Number:</label>
-	                  <input class="form-control" id="cc-num" type="text">
-	                </div>
-	                <div class="col-lg form-group">
-	                  <label for="zip">Zip Code:</label>
-	                  <input class="form-control" id="zip" type="text">
-	                </div>
-	                <div class="col-lg form-group">
-	                  <label for="cvv">CVV:</label>
-	                  <input class="form-control" id="cvv" type="text">
-	                </div>
-	              </div>
-
-	              <div class="form-row">
-	                <label class="col-lg-12">Expiration Date:</label>
-
-	                <div class="form-group col-lg-8">
-	                  <select class="custom-select form-control" id="exp-month">
-	                    <option value="1">1 - January</option>
-	                    <option value="2">2 - February</option>
-	                    <option value="3">3 - March</option>
-	                    <option value="4">4 - April</option>
-	                    <option value="5">5 - May</option>
-	                    <option value="6">6 - June</option>
-	                    <option value="7">7 - July</option>
-	                    <option value="8">8 - August</option>
-	                    <option value="9">9 - September</option>
-	                    <option value="10">10 - October</option>
-	                    <option value="11">11 - November</option>
-	                    <option value="12">12 - December</option>
-	                  </select>
-	                </div>
-
-	                <div class="form-group col-lg">
-	                  <select class="custom-select form-control" id="exp-year">
-	                    <option value="2016">2016</option>
-	                    <option value="2017">2017</option>
-	                    <option value="2018">2018</option>
-	                    <option value="2019">2019</option>
-	                    <option value="2020">2020</option>
-	                  </select>
-	                </div>
-	              </div>
-
-	              <h4 class="mb-4"></h4>
-	              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-
-	            </form><!-- /Modal Form -->
-	          </div>
-	        </div>
-	      </div>
-	    </div> <!--=========== /Modal ==========-->
 
 	    <!-- Optional JavaScript -->
 	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	  </body>
 
 		<!-- /Custom Code Ends Here -->
 
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	<!--=========== Modal ==========-->
+	<div class="modal fade" id="join" tabindex="-1" role="dialog" aria-labelledby="Join the club" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header bg-info text-white">
+					<h5 class="modal-title text-warning" id="exampleModalLabel">Wanna join the club?</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body text-info">
+					<!-- Modal Form -->
+					<form>
+						<div class="alert alert-warning alert-dismissible fade show" role="alert">
+							<strong>Howdy!</strong> Coming Soon. Thanks for reaching out!
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<h5 class="mb-4">Basic Info:</h5>
+						<div class="form-group">
+							<label for="name">Name:</label>
+							<input type="text" class="form-control" id="name">
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" class="form-control" id="email">
+						</div>
+						<div class="form-group">
+							<label for="location">Location:</label>
+							<input type="location" class="form-control" id="location">
+						</div>
+						<div class="form-group">
+							<label for="music">Music Link:</label>
+							<input type="music" class="form-control" id="music">
+						</div>
+						<div class="form-group">
+							<label for"genre">Music Genre:</label>
+							<select class="custom-select form-control" id="genre">
+								<option value="hiphop">Hip-hop</option>
+								<option value="lofi">Lo-fi</option>
+								<option value="rock">Rock</option>
+								<option value="pop">Pop</option>
+								<option value="folk">Folk</option>
+							</select>
+						</div>
+
+						<!-- Custom Checkboxes -->
+						<hr class="mr-4">
+						<h5 class="mb-4">What can we help you with?</h5>
+
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="checkbox-design">
+							<label class="custom-control-label" for="checkbox-design">Design</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="checkbox-website">
+							<label class="custom-control-label" for="checkbox-website">Website Development</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="checkbox-promotion">
+							<label class="custom-control-label" for="checkbox-promotion">Promotion</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="checkbox-gaming">
+							<label class="custom-control-label" for="checkbox-gaming">Gaming Sponsorship</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="checkbox-screenprint">
+							<label class="custom-control-label" for="checkbox-screenprint">Screenprinting</label>
+						</div><!-- /Custom Checkboxes -->
+
+						<!-- Payment Information -->
+						<hr class="mr-4">
+						<h5 class="mb-4">Want to give us money for some reason?</h5>
+
+						<div class="form-row">
+							<div class="col-lg-6 form-group">
+								<label for="cc-num">Card Number:</label>
+								<input class="form-control" id="cc-num" type="text">
+							</div>
+							<div class="col-lg form-group">
+								<label for="zip">Zip Code:</label>
+								<input class="form-control" id="zip" type="text">
+							</div>
+							<div class="col-lg form-group">
+								<label for="cvv">CVV:</label>
+								<input class="form-control" id="cvv" type="text">
+							</div>
+						</div>
+
+						<div class="form-row">
+							<label class="col-lg-12">Expiration Date:</label>
+
+							<div class="form-group col-lg-8">
+								<select class="custom-select form-control" id="exp-month">
+									<option value="1">1 - January</option>
+									<option value="2">2 - February</option>
+									<option value="3">3 - March</option>
+									<option value="4">4 - April</option>
+									<option value="5">5 - May</option>
+									<option value="6">6 - June</option>
+									<option value="7">7 - July</option>
+									<option value="8">8 - August</option>
+									<option value="9">9 - September</option>
+									<option value="10">10 - October</option>
+									<option value="11">11 - November</option>
+									<option value="12">12 - December</option>
+								</select>
+							</div>
+
+							<div class="form-group col-lg">
+								<select class="custom-select form-control" id="exp-year">
+									<option value="2016">2016</option>
+									<option value="2017">2017</option>
+									<option value="2018">2018</option>
+									<option value="2019">2019</option>
+									<option value="2020">2020</option>
+								</select>
+							</div>
+						</div>
+
+						<h4 class="mb-4">Ready to submit?</h4> <!-- What is this h4 for? -->
+						<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+
+					</form><!-- /Modal Form -->
+				</div>
+			</div>
+		</div>
+	</div> <!--=========== /Modal ==========-->
 
 <?php
-get_sidebar();
 get_footer();

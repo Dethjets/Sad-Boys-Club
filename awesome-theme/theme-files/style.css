@@ -999,6 +999,8 @@ object {
 
 /* -- Custom CSS Starts here */
 
+/* Navbar and Hamburger pop Down */
+
 .table,.panel{
 	background:#100806;
 }
@@ -1042,6 +1044,8 @@ object {
 		background-color: #f7d6e0;
 }
 
+/* Nav Bar ends? Need to combine with lower Nav elements */
+
 .form-holder {
     background-color:#CCC;
     padding:0.625rem; /*10px/16px*/
@@ -1074,9 +1078,9 @@ object {
   color:black;
 }
 
-#page {
-  padding: 1.875rem 2.125rem 6.25rem !important; /*30px/16px 34px/16px 100px/16px*/
-}
+/*  #page {
+  padding: 1.875rem 2.125rem 6.25rem !important; 30px/16px 34px/16px 100px/16px
+}  */
 
 .modal .table,.modal .panel {
   background-color: #fff;
@@ -1216,6 +1220,28 @@ li {
 	border-color: #c884a6;
 	color: #fff;
 }
+
+/* Footer Code starts here */
+
+.site-footer {
+    margin: 0px auto;
+    margin-bottom: 20px;
+		margin-top: 10px;
+    text-align: center;
+		background-color: #c884a6 !important;
+}
+
+.input-group {
+	text-align: center;
+	width: 100%;
+}
+
+/* Jumbotron */
+
+.jumbotron-fluid {
+	background-color: #fff !important;
+}
+
 
 
 

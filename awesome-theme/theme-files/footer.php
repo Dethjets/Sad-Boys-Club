@@ -15,7 +15,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'awesome-theme' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://square205.com/', 'awesome-theme' ) ); ?>">
 				<?php
 				/* translators: %s: Development Co. name, i.e. Square 205. */
 				printf( esc_html__( 'Proudly powered by %s', 'awesome-theme' ), 'Square 205' );
@@ -24,7 +24,7 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'awesome-theme' ), 'Sad Boy', '<a href="http://underscores.me/">Nathan Williams</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'awesome-theme' ), 'Sad Boy', '<a href="https://github.com/Dethjets/Sad-Boys-Club">Nathan Williams</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
