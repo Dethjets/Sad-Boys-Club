@@ -40,12 +40,12 @@
 			$awesome_theme_description = get_bloginfo( 'description', 'display' );
 			if ( $awesome_theme_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $awesome_theme_description; /* WPCS: xss ok. */ ?></p>
+				<!-- <p class="site-description"><?php echo $awesome_theme_description; /* WPCS: xss ok. */ ?></p> -->
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'awesome-theme' ); ?></button>
+	<!--	<nav id="site-navigation" class="main-navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'awesome-theme' ); ?></button> -->
 
 <!-- Inserted custom nav-bar code -->
 
@@ -70,12 +70,12 @@
 				?>
 			</div>
 		</div>
-	<div class="container">
+	</div>
 </nav><!-- /Navbar -->
 
 <!-- /Inserted custom nav-bar code -->
 
-		</nav><!-- #site-navigation -->
+	<!--	</nav> --><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
